@@ -1,0 +1,11 @@
+# Site settings
+title: Robin Ricard
+email: robin@rricard.me
+description: Robin's website and blog !
+baseurl: ""
+url: "http://rricard.me"
+twitter_username: r_ricard
+github_username:  rricard
+
+# Build settings
+markdown: kramdown
