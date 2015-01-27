@@ -2,40 +2,40 @@
 
 @font-face {
     font-family: 'aller-light';
-    src: url('http://rricard.me/public/fonts/aller-light.eot');
-    src: url('http://rricard.me/public/fonts/aller-light.eot?#iefix') format('embedded-opentype'),
-         url('http://rricard.me/public/fonts/aller-light.woff') format('woff'),
-         url('http://rricard.me/public/fonts/aller-light.ttf') format('truetype');
+    src: url('http://www.rricard.me/public/fonts/aller-light.eot');
+    src: url('http://www.rricard.me/public/fonts/aller-light.eot?#iefix') format('embedded-opentype'),
+         url('http://www.rricard.me/public/fonts/aller-light.woff') format('woff'),
+         url('http://www.rricard.me/public/fonts/aller-light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'aller-bold';
-    src: url('http://rricard.me/public/fonts/aller-bold.eot');
-    src: url('http://rricard.me/public/fonts/aller-bold.eot?#iefix') format('embedded-opentype'),
-         url('http://rricard.me/public/fonts/aller-bold.woff') format('woff'),
-         url('http://rricard.me/public/fonts/aller-bold.ttf') format('truetype');
+    src: url('http://www.rricard.me/public/fonts/aller-bold.eot');
+    src: url('http://www.rricard.me/public/fonts/aller-bold.eot?#iefix') format('embedded-opentype'),
+         url('http://www.rricard.me/public/fonts/aller-bold.woff') format('woff'),
+         url('http://www.rricard.me/public/fonts/aller-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'novecento-bold';
-    src: url('http://rricard.me/public/fonts/novecento-bold.eot');
-    src: url('http://rricard.me/public/fonts/novecento-bold.eot?#iefix') format('embedded-opentype'),
-         url('http://rricard.me/public/fonts/novecento-bold.woff') format('woff'),
-         url('http://rricard.me/public/fonts/novecento-bold.ttf') format('truetype');
+    src: url('http://www.rricard.me/public/fonts/novecento-bold.eot');
+    src: url('http://www.rricard.me/public/fonts/novecento-bold.eot?#iefix') format('embedded-opentype'),
+         url('http://www.rricard.me/public/fonts/novecento-bold.woff') format('woff'),
+         url('http://www.rricard.me/public/fonts/novecento-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'fleurons';
-    src: url('http://rricard.me/public/fonts/fleurons.eot');
-    src: url('http://rricard.me/public/fonts/fleurons.eot?#iefix') format('embedded-opentype'),
-         url('http://rricard.me/public/fonts/fleurons.woff') format('woff'),
-         url('http://rricard.me/public/fonts/fleurons.ttf') format('truetype');
+    src: url('http://www.rricard.me/public/fonts/fleurons.eot');
+    src: url('http://www.rricard.me/public/fonts/fleurons.eot?#iefix') format('embedded-opentype'),
+         url('http://www.rricard.me/public/fonts/fleurons.woff') format('woff'),
+         url('http://www.rricard.me/public/fonts/fleurons.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,7 +44,7 @@
 
 body {
   font-family: "aller-light";
-  background: url('http://rricard.me/public/images/gray.png') #fff;
+  background: url('http://www.rricard.me/public/images/gray.png') #fff;
   background-size: 322px;
   margin: 0;
 }
