@@ -72,4 +72,4 @@ I'll keep you updated on my research on this. If I find out it's not efficient o
 
 *If what I just wrote feels a bit fuzzy or if I made a major spelling mistake (that happens quite often), please open [an issue or a PR](https://github.com/rricard/rricard.github.io/issues) for this blog.*
 
-**[Discussion on Hacker News](https://news.ycombinator.com)**
+**[Discussion on Hacker News](https://news.ycombinator.com/item?id=8968944)**
