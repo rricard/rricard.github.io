@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1255px" height="582px" viewBox="0 0 1255 582" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Overview</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.543507278   0 0 0 0 0.165251493   0 0 0 0 0.165251493  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.149965883   0 0 0 0 0.292923956   0 0 0 0 0.459608844  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.149965883   0 0 0 0 0.292923956   0 0 0 0 0.459608844  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.492749725   0 0 0 0 0.62329932   0 0 0 0 0.360541668  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.818319515   0 0 0 0 0.788148849   0 0 0 0 0.15298287  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.492749725   0 0 0 0 0.62329932   0 0 0 0 0.360541668  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.492749725   0 0 0 0 0.62329932   0 0 0 0 0.360541668  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.818319515   0 0 0 0 0.788148849   0 0 0 0 0.15298287  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Overview" sketch:type="MSArtboardGroup">
+            <g id="Rectangle-1-+-Type-something" sketch:type="MSLayerGroup" transform="translate(13.000000, 13.000000)">
+                <rect id="Rectangle-1" fill="#D0011B" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="900" height="50" rx="8"></rect>
+                <text id="Database" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#FFFFFF">
+                    <tspan x="399.144" y="35">Database</tspan>
+                </text>
+            </g>
+            <g id="Rectangle-1-+-Type-something-2" sketch:type="MSLayerGroup" transform="translate(13.000000, 136.000000)">
+                <rect id="Rectangle-1" fill="#4990E2" filter="url(#filter-2)" sketch:type="MSShapeGroup" x="0" y="0" width="900" height="50" rx="8"></rect>
+                <text id="Server-Backend/API" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#FFFFFF">
+                    <tspan x="342.96" y="35">Server Backend/API</tspan>
+                </text>
+            </g>
+            <g id="Rectangle-1-+-Type-something-8" sketch:type="MSLayerGroup" transform="translate(936.000000, 135.000000)">
+                <rect id="Rectangle-1" fill="#4990E2" filter="url(#filter-3)" sketch:type="MSShapeGroup" x="0" y="0" width="300" height="299" rx="8"></rect>
+                <text id="Common-parts" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#FFFFFF">
+                    <tspan x="70.26" y="155.98">Common parts</tspan>
+                </text>
+            </g>
+            <g id="Rectangle-1-+-Type-something-3" sketch:type="MSLayerGroup" transform="translate(13.000000, 259.000000)">
+                <rect id="Rectangle-1" fill="#B8E986" filter="url(#filter-4)" sketch:type="MSShapeGroup" x="0" y="0" width="290" height="50" rx="8"></rect>
+                <text id="Frontend-Server" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                    <tspan x="57.688" y="35.48">Frontend Server</tspan>
+                </text>
+            </g>
+            <g id="Rectangle-1-+-Type-something-5" sketch:type="MSLayerGroup" transform="translate(16.000000, 507.000000)">
+                <rect id="Rectangle-1" fill="#F8E81C" filter="url(#filter-5)" sketch:type="MSShapeGroup" x="0" y="0" width="590" height="50" rx="8"></rect>
+                <text id="Client-Renderer/DOM" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                    <tspan x="179.02" y="35">Client Renderer/DOM</tspan>
+                </text>
+            </g>
+            <g id="Rectangle-1-+-Type-something-4" sketch:type="MSLayerGroup" transform="translate(313.000000, 384.000000)">
+                <rect id="Rectangle-1" fill="#B8E986" filter="url(#filter-6)" sketch:type="MSShapeGroup" x="0" y="0" width="290" height="50" rx="8"></rect>
+                <text id="Frontend-Client" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                    <tspan x="61.012" y="35.48">Frontend Client</tspan>
+                </text>
+            </g>
+            <g id="Rectangle-1-+-Type-something-6" sketch:type="MSLayerGroup" transform="translate(613.000000, 384.000000)">
+                <rect id="Rectangle-1" fill="#B8E986" filter="url(#filter-7)" sketch:type="MSShapeGroup" x="0" y="0" width="300" height="50" rx="8"></rect>
+                <text id="Mobile-Client" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                    <tspan x="78.228" y="35">Mobile Client</tspan>
+                </text>
+            </g>
+            <g id="Line-+-Line-2" sketch:type="MSLayerGroup" transform="translate(463.000000, 63.000000)" stroke="#000000" fill="#000000" stroke-linecap="square">
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line-2" sketch:type="MSShapeGroup" transform="translate(1.500000, 37.000000) scale(1, -1) translate(-1.500000, -37.000000) "></path>
+                <path id="Line-2-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+            </g>
+            <g id="Line-+-Line-3" sketch:type="MSLayerGroup" transform="translate(157.000000, 185.000000)" stroke="#000000" fill="#000000" stroke-linecap="square">
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line-2" sketch:type="MSShapeGroup" transform="translate(1.500000, 37.000000) scale(1, -1) translate(-1.500000, -37.000000) "></path>
+                <path id="Line-2-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+            </g>
+            <g id="Line-+-Line-5" sketch:type="MSLayerGroup" transform="translate(416.000000, 435.000000)" stroke="#000000" stroke-linecap="square" fill="#000000">
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+            </g>
+            <g id="Line-+-Line-9" sketch:type="MSLayerGroup" transform="translate(394.500000, 471.000000) scale(1, -1) translate(-394.500000, -471.000000) translate(393.000000, 434.000000)" stroke="#000000" stroke-linecap="square" fill="#000000">
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+            </g>
+            <g id="Line-+-Line-7" sketch:type="MSLayerGroup" transform="translate(457.000000, 186.000000)" stroke="#000000" fill="#000000" stroke-linecap="square">
+                <path d="M2,1.33783784 L2,196.680494" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M2,196.337838 C3.05,192.557838 3.95,189.317838 5,185.537838 C2.9,185.537838 1.1,185.537838 -1,185.537838 C0.05,189.317838 0.95,192.557838 2,196.337838 C2,196.337838 2,196.337838 2,196.337838 Z"></path>
+                <path d="M2,1.33783784 L2,196.680494" id="Line-2" sketch:type="MSShapeGroup" transform="translate(2.000000, 99.000000) scale(1, -1) translate(-2.000000, -99.000000) "></path>
+                <path id="Line-2-decoration-1" d="M2,196.337838 C3.05,192.557838 3.95,189.317838 5,185.537838 C2.9,185.537838 1.1,185.537838 -1,185.537838 C0.05,189.317838 0.95,192.557838 2,196.337838 C2,196.337838 2,196.337838 2,196.337838 Z"></path>
+            </g>
+            <g id="Line-+-Line-8" sketch:type="MSLayerGroup" transform="translate(765.000000, 188.000000)" stroke="#000000" fill="#000000" stroke-linecap="square">
+                <path d="M2,1.33783784 L2,196.680494" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M2,196.337838 C3.05,192.557838 3.95,189.317838 5,185.537838 C2.9,185.537838 1.1,185.537838 -1,185.537838 C0.05,189.317838 0.95,192.557838 2,196.337838 C2,196.337838 2,196.337838 2,196.337838 Z"></path>
+                <path d="M2,1.33783784 L2,196.680494" id="Line-2" sketch:type="MSShapeGroup" transform="translate(2.000000, 99.000000) scale(1, -1) translate(-2.000000, -99.000000) "></path>
+                <path id="Line-2-decoration-1" d="M2,196.337838 C3.05,192.557838 3.95,189.317838 5,185.537838 C2.9,185.537838 1.1,185.537838 -1,185.537838 C0.05,189.317838 0.95,192.557838 2,196.337838 C2,196.337838 2,196.337838 2,196.337838 Z"></path>
+            </g>
+            <g id="Line-+-Line-4" sketch:type="MSLayerGroup" transform="translate(184.000000, 312.000000)" stroke="#000000" stroke-linecap="square" fill="#000000">
+                <path d="M1.5,1.32432432 L1.5,194.693822" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,194.324324 C2.55,190.544324 3.45,187.304324 4.5,183.524324 C2.4,183.524324 0.6,183.524324 -1.5,183.524324 C-0.45,187.304324 0.45,190.544324 1.5,194.324324 C1.5,194.324324 1.5,194.324324 1.5,194.324324 Z"></path>
+            </g>
+            <g id="Line-+-Line-11" sketch:type="MSLayerGroup" transform="translate(137.500000, 410.000000) scale(1, -1) translate(-137.500000, -410.000000) translate(136.000000, 312.000000)" stroke="#000000" stroke-linecap="square" fill="#000000">
+                <path d="M1.5,1.32432432 L1.5,194.693822" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,194.324324 C2.55,190.544324 3.45,187.304324 4.5,183.524324 C2.4,183.524324 0.6,183.524324 -1.5,183.524324 C-0.45,187.304324 0.45,190.544324 1.5,194.324324 C1.5,194.324324 1.5,194.324324 1.5,194.324324 Z"></path>
+            </g>
+            <g id="Rectangle-1-+-Type-something-7" sketch:type="MSLayerGroup" transform="translate(617.000000, 506.000000)">
+                <rect id="Rectangle-1" fill="#F8E81C" filter="url(#filter-8)" sketch:type="MSShapeGroup" x="0" y="0" width="300" height="50" rx="8"></rect>
+                <text id="iOS-UI/Android-UI" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="24" font-weight="normal" sketch:alignment="middle" fill="#000000">
+                    <tspan x="54.156" y="34.48">iOS UI/Android UI</tspan>
+                </text>
+            </g>
+            <text id="Queries/Data" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="488" y="105">Queries/Data</tspan>
+            </text>
+            <text id="API-Calls/Data" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="173" y="227">API Calls/Data</tspan>
+            </text>
+            <text id="HTML" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="187" y="405">HTML</tspan>
+            </text>
+            <text id="HTTP-Request" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="16" y="405">HTTP Request</tspan>
+            </text>
+            <text id="DOM-Changes-(delta)" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="428" y="474">DOM Changes (delta)</tspan>
+            </text>
+            <text id="User-Events" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="292" y="473">User Events</tspan>
+            </text>
+            <g id="Line-+-Line-6" sketch:type="MSLayerGroup" transform="translate(763.000000, 434.000000)" stroke="#000000" stroke-linecap="square" fill="#000000">
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+            </g>
+            <g id="Line-+-Line-10" sketch:type="MSLayerGroup" transform="translate(741.500000, 470.000000) scale(1, -1) translate(-741.500000, -470.000000) translate(740.000000, 433.000000)" stroke="#000000" stroke-linecap="square" fill="#000000">
+                <path d="M1.5,0.5 L1.5,73.5068512" id="Line" sketch:type="MSShapeGroup"></path>
+                <path id="Line-decoration-1" d="M1.5,73.5 C2.55,69.72 3.45,66.48 4.5,62.7 C2.4,62.7 0.6,62.7 -1.5,62.7 C-0.45,66.48 0.45,69.72 1.5,73.5 C1.5,73.5 1.5,73.5 1.5,73.5 Z"></path>
+            </g>
+            <text id="UI-Changes-(delta)" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="783" y="473">UI Changes (delta)</tspan>
+            </text>
+            <text id="User-Events-2" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="634" y="474">User Events</tspan>
+            </text>
+            <text id="API-Calls/Data-2" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="474" y="227">API Calls/Data</tspan>
+            </text>
+            <text id="API-Calls/Data-3" sketch:type="MSTextLayer" font-family="Fira Sans" font-size="18" font-weight="normal" fill="#000000">
+                <tspan x="782" y="227">API Calls/Data</tspan>
+            </text>
+            <path d="M850.5,160.5 L1004.5,160.5" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M850.5,409.5 L1004.5,409.5" id="Line-2" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M264.5,288.5 L997.5,288.5" id="Line-3" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+            <path d="M568.5,288.5 L568.5,408.516663" id="Line" stroke="#979797" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
