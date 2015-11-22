@@ -210,3 +210,23 @@ You can now run webpack and try to run the script:
 ./node_modules/.bin/webpack
 node ./bin/try-hello.js
 ```
+
+#### Try on Lambda
+
+You can also use the code generated in `dist/` directly on Lambda.
+
+Copy the contents of `dist/hello.js` and paste it in a new lambda function.
+
+![Manual Setup](/public/images/lambda/manual.png)
+
+Don't forget to use the Node.js runtime and to point your handler on
+`index.hello` instead of `index.handler`.
+
+Now you can test it!
+
+![Setup Hello Test](/public/images/lambda/setup_test_hello.png)
+
+![Hello Test Results](/public/images/lambda/results_test_hello.png)
+
+Note that you **can't rely on any compiled dependency**. That is an avoidable
+limitation but I don't have any process to apply for now.
