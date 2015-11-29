@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ES6 on AWS Lambda"
-date:   2015-11-23 10:00:00
+date:   2015-11-29 21:00:00
 categories: es6 aws lambda nodejs
 ---
 
