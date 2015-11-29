@@ -8,7 +8,7 @@ categories: es6 aws lambda nodejs
 [AWS Lambda](https://aws.amazon.com/lambda/) is a very cool and simple service
 able to run "cloud functions" very fast and cost-effectively. It is particularly
 interesting if you want to process events that spawn into your AWS
-infrastructure.
+infrastructure or scaffold a small API very fast.
 
 Originally, Lambda was based on Node.js. Now lambda covers more languages with
 Python 2.7 and Java 8. Unfortunately, Lambda doesn't seem to have a really
@@ -228,8 +228,8 @@ Now you can test it!
 
 ![Hello Test Results](/public/images/lambda/results_test_hello.png)
 
-Note that you **can't rely on any compiled dependency**. That is an avoidable
-limitation but I don't have any process to apply for now.
+Note that you **can't rely on any compiled dependency**. We may see how to solve
+this in an another post.
 
 ## Better local development
 
@@ -409,7 +409,9 @@ If you use flow, you will find the `LambdaContext` type
 
 #### Tests
 
-Finally, we can now easily [test our lambdas]()!
+Finally, we can now easily
+[test our lambda](https://github.com/rricard/lambda-es6-example/commit/076ac7916bb36d89826a921ce14eefc088063e16)
+with mocha:
 
 ```js
 // tests/hello.js
@@ -440,12 +442,12 @@ describe("hello lambda", function() {
 });
 ```
 
-Then, fire up mocha via npm: `npm t`.
+You can now fire up mocha via npm: `npm t`.
 
-## A complete example: HTTP call with fetch
+## An another example: HTTP call with fetch
 
-We'll see here how to do something really simple but that require using external
-modules: get a webpage somewhere in the internet with the
+We'll see here how to do something really simple but that requires using
+external modules: getting a webpage somewhere in the internet with the
 [fetch standard](https://fetch.spec.whatwg.org).
 
 For that, we'll need `node-fetch` first: `npm i --save node-fetch`
@@ -510,15 +512,16 @@ describe("fetch lambda", function() {
 });
 ```
 
-You can test it on AWS now, you'll see that the file gets quite large but it
-does take all of the dependencies in account.
+You can test it on AWS now, you'll see that the webpack output gets quite large
+but it does take all of the dependencies in account at once.
 
 ## Conclusion
 
 Making ES6 and Lambda work together is not that hard but having proper tooling
 to develop your ES6 lambdas easily require some knowledge.
 
-I hope that this small tutorial can help you develop lambdas faster.
+I hope that this small tutorial helped you develop lambdas faster and/or
+understand better the webpack compilation process.
 
 Later I'll see if I can give you good tooling to export lambdas with compiled
 dependencies and how to deploy them more easily directly on AWS (without the
