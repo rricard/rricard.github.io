@@ -26,7 +26,7 @@ lambdas with ES6.
 
 ### Initialize and dependencies
 
-First thing we need to do is to
+First thing we need to do is
 [setup a basic npm package.json](https://github.com/rricard/lambda-es6-example/commit/1f61676b8972a28593a1f3d8113e0792472eac90).
 It's as simple as running `npm init`.
 
@@ -370,7 +370,7 @@ Since we are going to test them later, it may be interesting to use a standard
 asynchronous API: the
 [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
-We only use to reuse the fake context created earlier and put it in a
+We only need to reuse the fake context created earlier and put it in a
 [promisifying function](https://github.com/rricard/lambda-es6-example/commit/860fd190f9aea4ce091f264824e87bab98e35cc5).
 
 ```js
