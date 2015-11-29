@@ -441,3 +441,85 @@ describe("hello lambda", function() {
 ```
 
 Then, fire up mocha via npm: `npm t`.
+
+## A complete example: HTTP call with fetch
+
+We'll see here how to do something really simple but that require using external
+modules: get a webpage somewhere in the internet with the
+[fetch standard](https://fetch.spec.whatwg.org).
+
+For that, we'll need `node-fetch` first: `npm i --save node-fetch`
+
+[Now we can implement the lambda](https://github.com/rricard/lambda-es6-example/commit/f6182e6ddc55231a7679e4acd712a9d3651c4462)
+really easily:
+
+```js
+// lambdas/fetch.js
+
+/* @flow */
+
+import fetch from "node-fetch";
+
+import type {LambdaContext} from "../lib/lambda-types.js";
+
+type FetchOptions = {
+  url: string,
+  method?: string,
+  headers?: {[key: string]: string},
+  body?: string
+};
+
+export function handler({
+  url,
+  method,
+  headers,
+  body
+}: FetchOptions, context: LambdaContext): void {
+  fetch(url, {
+    method: method || "GET",
+    headers: headers || {},
+    body: body
+  })
+  .then(res => res.text())
+  .then(context.succeed, context.fail);
+}
+```
+
+And a small test:
+
+```js
+// tests/fetch.js
+
+/* @flow */
+
+import assert from "assert";
+
+import {lambdaPromisifier} from "../lib/lambda-promisifier.js"
+import {handler} from "../lambdas/fetch.js"
+
+const promisifiedFetch = lambdaPromisifier(handler);
+
+describe("fetch lambda", function() {
+  it("should be able to make an http call", function(done) {
+    promisifiedFetch({url: "http://www.rricard.me"})
+    .then(res => {
+      assert(/Posts/.test(res));
+    })
+    .then(() => done(), done);
+  });
+});
+```
+
+You can test it on AWS now, you'll see that the file gets quite large but it
+does take all of the dependencies in account.
+
+## Conclusion
+
+Making ES6 and Lambda work together is not that hard but having proper tooling
+to develop your ES6 lambdas easily require some knowledge.
+
+I hope that this small tutorial can help you develop lambdas faster.
+
+Later I'll see if I can give you good tooling to export lambdas with compiled
+dependencies and how to deploy them more easily directly on AWS (without the
+copy/paste process).
