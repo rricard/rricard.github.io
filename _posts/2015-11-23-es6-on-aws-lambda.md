@@ -404,6 +404,9 @@ export function lambdaPromisifier(
 };
 ```
 
+If you use flow, you will find the `LambdaContext` type
+[here](https://github.com/rricard/lambda-es6-example/blob/master/lib/lambda-types.js).
+
 #### Tests
 
 Finally, we can now easily [test our lambdas]()!
