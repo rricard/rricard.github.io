@@ -308,3 +308,133 @@ This script can be executed like this:
 # node bin/run.js $lambdaFile.$lambdaFunction $lambdaOptions
 node bin/run.js hello.hello '{"name": "cli"}'
 ```
+
+### Testing & Reusability
+
+What's cool about lambdas is that they're really easy to test. It's just inputs
+and outputs. Of course testing a lambda needs to setup a context.
+
+Hopefully, we already kind of did that with the fast-exec script. All we need is
+to refactor a little bit to have everything usable in mocha. More than that,
+we could create a Promise wrapper to transform our lambdas into reusable
+Promises in other projects.
+
+#### Install mocha
+
+[We need to install mocha](https://github.com/rricard/lambda-es6-example/commit/bf62e380b15db455142dbdcd54efccbd09fe556c):
+`npm i --save-dev mocha`.
+
+Mocha will need to register itself to Babel. Just insert the right script into
+the package.json.
+
+```js
+{
+  "scripts": {
+    // ...
+    "test": "mocha --compilers js:babel-core/register --recursive tests/"
+  }
+}
+```
+
+At this point we'll need a .babelrc to load our presets and plugins.
+This rc could be used by webpack to load its configuration.
+
+```js
+// .babelrc
+{
+  "presets": ["es2015"],
+  "plugins": ["syntax-flow", "transform-flow-strip-types"]
+}
+```
+
+To use the same rc in webpack, just change the query in the module loader:
+
+```js
+{
+  test: /\.js$/,
+  exclude: /node_modules/,
+  loader: 'babel',
+  query: JSON.parse(
+    fs.readFileSync(path.join(__dirname, ".babelrc"), {encoding: "utf8"})
+  )
+},
+```
+
+#### Promise-wrapper
+
+Amazon made it easy to start with Lambda but it is actually not really
+standard so the lambda you can create here are not really reusable
+elsewhere.
+
+Since we are going to test them later, it may be interesting to use a standard
+asynchronous API: the
+[Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+
+We only use to reuse the fake context created earlier and put it in a
+[promisifying function](https://github.com/rricard/lambda-es6-example/commit/860fd190f9aea4ce091f264824e87bab98e35cc5).
+
+```js
+// lib/lambda-promisifier.js
+
+/* @flow */
+
+import type {LambdaContext} from "./lambda-types.js";
+
+export function lambdaPromisifier(
+  lambda: (options: any, context: LambdaContext) => void
+): (options: any) => Promise<any> {
+  return (options: any) =>
+    new Promise((resolve, reject) =>
+      lambda(options, {
+        succeed: resolve,
+        fail: reject,
+        done: (err, res) => err ? reject(err) : resolve(res),
+        getRemainingTimeInMillis: () => Infinity,
+        functionName: "fakeLambda",
+        functionVersion: "0",
+        invokedFunctionArn: "arn:aws:lambda:fake-region:fake-acc:function:fakeLambda",
+        memoryLimitInMB: Infinity,
+        awsRequestId: "fakeRequest",
+        logGroupName: "fakeGroup",
+        logStreamName: "fakeStream",
+        identity: null,
+        clientContext: null
+      })
+    );
+};
+```
+
+#### Tests
+
+Finally, we can now easily [test our lambdas]()!
+
+```js
+// tests/hello.js
+
+import assert from "assert";
+
+import {lambdaPromisifier} from "../lib/lambda-promisifier.js"
+import {hello} from "../lambdas/hello.js"
+
+const promisifiedHello = lambdaPromisifier(hello);
+
+describe("hello lambda", function() {
+  it("should greet the world by default", function(done) {
+    promisifiedHello({})
+    .then(res => {
+      assert.equal(res, "Hello world!")
+    })
+    .then(() => done(), done);
+  });
+
+  it("should greet someone when precised", function(done) {
+    promisifiedHello({name: "someone"})
+    .then(res => {
+      assert.equal(res, "Hello someone!")
+    })
+    .then(() => done(), done);
+  });
+});
+```
+
+Then, fire up mocha via npm: `npm t`.
