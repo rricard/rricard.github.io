@@ -33,11 +33,11 @@ It's as simple as running `npm init`.
 Then, we'll need to
 [import webpack, babel and its presets and plugins](https://github.com/rricard/lambda-es6-example/commit/a263795009234b0f7fecdc92220f851d509559eb).
 
-```
+{% highlight shell %}
 npm i --save-dev webpack babel-core babel-loader json-loader \
   babel-preset-es2015 babel-plugin-transform-flow-strip-types \
   babel-plugin-syntax-flow
-```
+{% endhighlight %}
 
 Note that in this example I import the webpack's `json-loader` to allow requires
 on JSON files. I also import the Babel [flowtype](http://flowtype.org) plugins
@@ -51,7 +51,7 @@ there's no magic needed, don't worry!
 Let's start with a
 [basic `webpack.config.js`](https://github.com/rricard/lambda-es6-example/commit/f7787b3c24fc332f35d7117489a9eaefe4ea1afc):
 
-```js
+{% highlight javascript %}
 // webpack.config.js
 
 var path = require("path");
@@ -59,14 +59,14 @@ var path = require("path");
 module.exports = {
 
 };
-```
+{% endhighlight %}
 
 #### Module Loaders
 
 I usually start my webpack config with the
 [module loaders](https://github.com/rricard/lambda-es6-example/commit/bccdaf2586350604d27c4fca9ae8a8ffe9375822):
 
-```js
+{% highlight javascript %}
 module: {
   loaders: [
     {
@@ -84,7 +84,7 @@ module: {
     }
   ]
 }
-```
+{% endhighlight %}
 
 Ok, if you don't know webpack, nothing really complicated here: each js file
 imported will be transformed through babel with the es2015 preset while
@@ -96,7 +96,7 @@ would do it.
 Then, we can define
 [how and where we want webpack to output my files](https://github.com/rricard/lambda-es6-example/commit/cf6e5dce81c34630d67b333262ef6ac4c83f040e):
 
-```js
+{% highlight javascript %}
 // webpack.config.js
 
 var path = require("path");
@@ -111,7 +111,7 @@ module.exports = {
   target: "node",
   module: { loaders: [ /* ... */ ] }
 };
-```
+{% endhighlight %}
 
 Here are some changes between the usual output you configure when you do a web
 project and what we intend to do here:
@@ -135,7 +135,7 @@ To that end, we need to read the directory synchronously and transform the
 result to something that looks like this:
 `{lambda1: "./lambdas/lambda1.js", lambda2: "./lambdas/lambda2.js"}`.
 
-```js
+{% highlight javascript %}
 // webpack.config.js
 
 var path = require("path");
@@ -158,7 +158,7 @@ module.exports = {
   target: "node",
   module: { loaders: [ /* ... */ ] }
 };
-```
+{% endhighlight %}
 
 Note that the precedent snippet uses arrow functions & `Object.assign()` so
 you'll need to use a fairly recent node version to develop locally.
@@ -170,7 +170,7 @@ Now, we can test a simple lambda function locally to
 
 You can now try the compilation with a simple lambda: `hello.js`
 
-```js
+{% highlight javascript %}
 // lambdas/hello.js
 
 /* @flow */
@@ -182,14 +182,14 @@ type HelloOptions = {
 export function hello(options: HelloOptions, context: any): void {
   context.succeed(`Hello ${options.name || "world"}!`);
 }
-```
+{% endhighlight %}
 
 As you can see, this file uses ES6 & flow heavily.
 
 We'll now be able to start a small script to ensure if we can execute our
 lambda: `try-hello.js`
 
-```js
+{% highlight javascript %}
 // bin/try-hello.js
 
 var helloModule = require("../dist/hello.js");
@@ -202,14 +202,14 @@ var fakeLambdaContext = {
 };
 
 helloModule.hello({name: "bob"}, fakeLambdaContext);
-```
+{% endhighlight %}
 
 You can now run webpack and try to run the script:
 
-```
+{% highlight shell %}
 ./node_modules/.bin/webpack
 node ./bin/try-hello.js
-```
+{% endhighlight %}
 
 #### Try on Lambda
 
@@ -245,12 +245,12 @@ To get an easy shortcut to the webpack watcher, I advise you to
 [add a script](https://github.com/rricard/lambda-es6-example/commit/28f0108f631d74254ccfde8cdfeb727e63dda870)
 in your package.json.
 
-```json
+{% highlight json %}
 "scripts": {
   "start": "webpack --watch",
   "test": "exit 1"
 },
-```
+{% endhighlight %}
 
 That way you just need to start it with `npm start`.
 
@@ -262,7 +262,7 @@ imported Lambda, I created a
 
 You can place it in `bin/run.js`:
 
-```js
+{% highlight javascript %}
 // bin/run.js
 
 const args = process.argv;
@@ -298,16 +298,16 @@ const context = {
 };
 
 lambda(options, context);
-```
+{% endhighlight %}
 
 Note again that you'll need a recent Node.js engine for local development.
 
 This script can be executed like this:
 
-```
+{% highlight shell %}
 # node bin/run.js $lambdaFile.$lambdaFunction $lambdaOptions
 node bin/run.js hello.hello '{"name": "cli"}'
-```
+{% endhighlight %}
 
 ### Testing & Reusability
 
@@ -327,29 +327,29 @@ Promises in other projects.
 Mocha will need to register itself to Babel. Just insert the right script into
 the package.json.
 
-```js
+{% highlight javascript %}
 {
   "scripts": {
     // ...
     "test": "mocha --compilers js:babel-core/register --recursive tests/"
   }
 }
-```
+{% endhighlight %}
 
 At this point we'll need a .babelrc to load our presets and plugins.
 This rc could be used by webpack to load its configuration.
 
-```js
+{% highlight javascript %}
 // .babelrc
 {
   "presets": ["es2015"],
   "plugins": ["syntax-flow", "transform-flow-strip-types"]
 }
-```
+{% endhighlight %}
 
 To use the same rc in webpack, just change the query in the module loader:
 
-```js
+{% highlight javascript %}
 {
   test: /\.js$/,
   exclude: /node_modules/,
@@ -358,7 +358,7 @@ To use the same rc in webpack, just change the query in the module loader:
     fs.readFileSync(path.join(__dirname, ".babelrc"), {encoding: "utf8"})
   )
 },
-```
+{% endhighlight %}
 
 #### Promise-wrapper
 
@@ -373,7 +373,7 @@ asynchronous API: the
 We only need to reuse the fake context created earlier and put it in a
 [promisifying function](https://github.com/rricard/lambda-es6-example/commit/860fd190f9aea4ce091f264824e87bab98e35cc5).
 
-```js
+{% highlight javascript %}
 // lib/lambda-promisifier.js
 
 /* @flow */
@@ -402,7 +402,7 @@ export function lambdaPromisifier(
       })
     );
 };
-```
+{% endhighlight %}
 
 If you use flow, you will find the `LambdaContext` type
 [here](https://github.com/rricard/lambda-es6-example/blob/master/lib/lambda-types.js).
@@ -413,7 +413,7 @@ Finally, we can now easily
 [test our lambda](https://github.com/rricard/lambda-es6-example/commit/076ac7916bb36d89826a921ce14eefc088063e16)
 with mocha:
 
-```js
+{% highlight javascript %}
 // tests/hello.js
 
 import assert from "assert";
@@ -440,7 +440,7 @@ describe("hello lambda", function() {
     .then(() => done(), done);
   });
 });
-```
+{% endhighlight %}
 
 You can now fire up mocha via npm: `npm t`.
 
@@ -455,7 +455,7 @@ For that, we'll need `node-fetch` first: `npm i --save node-fetch`
 [Now we can implement the lambda](https://github.com/rricard/lambda-es6-example/commit/f6182e6ddc55231a7679e4acd712a9d3651c4462)
 really easily:
 
-```js
+{% highlight javascript %}
 // lambdas/fetch.js
 
 /* @flow */
@@ -485,11 +485,11 @@ export function handler({
   .then(res => res.text())
   .then(context.succeed, context.fail);
 }
-```
+{% endhighlight %}
 
 And a small test:
 
-```js
+{% highlight javascript %}
 // tests/fetch.js
 
 /* @flow */
@@ -510,7 +510,7 @@ describe("fetch lambda", function() {
     .then(() => done(), done);
   });
 });
-```
+{% endhighlight %}
 
 You can test it on AWS now, you'll see that the webpack output gets quite large
 but it does take all of the dependencies in account at once.
