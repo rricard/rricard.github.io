@@ -33,11 +33,9 @@ It's as simple as running `npm init`.
 Then, we'll need to
 [import webpack, babel and its presets and plugins](https://github.com/rricard/lambda-es6-example/commit/a263795009234b0f7fecdc92220f851d509559eb).
 
-{% highlight shell %}
-npm i --save-dev webpack babel-core babel-loader json-loader \
-  babel-preset-es2015 babel-plugin-transform-flow-strip-types \
-  babel-plugin-syntax-flow
-{% endhighlight %}
+    npm i --save-dev webpack babel-core babel-loader json-loader \
+      babel-preset-es2015 babel-plugin-transform-flow-strip-types \
+      babel-plugin-syntax-flow
 
 Note that in this example I import the webpack's `json-loader` to allow requires
 on JSON files. I also import the Babel [flowtype](http://flowtype.org) plugins
@@ -206,10 +204,8 @@ helloModule.hello({name: "bob"}, fakeLambdaContext);
 
 You can now run webpack and try to run the script:
 
-{% highlight shell %}
-./node_modules/.bin/webpack
-node ./bin/try-hello.js
-{% endhighlight %}
+    ./node_modules/.bin/webpack
+    node ./bin/try-hello.js
 
 #### Try on Lambda
 
@@ -304,10 +300,8 @@ Note again that you'll need a recent Node.js engine for local development.
 
 This script can be executed like this:
 
-{% highlight shell %}
-# node bin/run.js $lambdaFile.$lambdaFunction $lambdaOptions
-node bin/run.js hello.hello '{"name": "cli"}'
-{% endhighlight %}
+    # node bin/run.js $lambdaFile.$lambdaFunction $lambdaOptions
+    node bin/run.js hello.hello '{"name": "cli"}'
 
 ### Testing & Reusability
 
