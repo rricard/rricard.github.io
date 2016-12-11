@@ -520,3 +520,5 @@ understand better the webpack compilation process.
 Later I'll see if I can give you good tooling to export lambdas with compiled
 dependencies and how to deploy them more easily directly on AWS (without the
 copy/paste process).
+
+_[Discuss on HN](https://news.ycombinator.com/item?id=10648769)_
