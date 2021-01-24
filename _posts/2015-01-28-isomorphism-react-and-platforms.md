@@ -5,6 +5,8 @@ date:   2015-01-28 18:34:00
 categories: isomorphism react om cljs
 ---
 
+> ⌛ **This article is quite old!** This article dates back from when I was still studying computer science in university. I was back then quite enthusiastic about a lot of things and this article reflects that well! It may be out of date with my current way of thinking and working as I discovered different constraints in software development. Just keep that in mind and enjoy!
+
 This article could feel like I'm just writing on a trend. That's not true, I was thinking about it for a while now and the [React Native Announcement](https://www.youtube.com/watch?v=KVZ-P-ZI6W4) today just gave me a good excuse to write this !
 
 There is already a batch of good posts about Isomorphism out there (such as [this one from Airbnb](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/) or [this one from a Mozillian](http://jlongster.com/Presenting-The-Most-Over-Engineered-Blog-Ever) where he explains how he implemented his isomorphic blog) so I won't spend much time explaining it. An isomorphic app uses the same code to render views on the server and the client. React makes it easier and better by being able to just change what was updated on the client side without re-computing the whole DOM. It is mostly costless to add the rendering on the server-side, React playing really well with Node. This is a good way to make mobile web apps start faster on bad cellular networks for instance.

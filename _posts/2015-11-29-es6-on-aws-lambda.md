@@ -5,6 +5,8 @@ date:   2015-11-29 21:00:00
 categories: es6 aws lambda nodejs
 ---
 
+> ⌛ **This article is quite old!** This article dates back from when I was still studying computer science in university. I was back then quite enthusiastic about a lot of things and this article reflects that well! It may be out of date with my current way of thinking and working as I discovered different constraints in software development. Just keep that in mind and enjoy!
+
 [AWS Lambda](https://aws.amazon.com/lambda/) is a very cool and simple service
 able to run "cloud functions" very fast and cost-effectively. It is particularly
 interesting if you want to process events that spawn into your AWS

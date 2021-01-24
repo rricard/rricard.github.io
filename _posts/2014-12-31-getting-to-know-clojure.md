@@ -5,6 +5,8 @@ date:   2014-12-31 16:51:00
 categories: clojure
 ---
 
+> ⌛ **This article is quite old!** This article dates back from when I was still studying computer science in university. I was back then quite enthusiastic about a lot of things and this article reflects that well! It may be out of date with my current way of thinking and working as I discovered different constraints in software development. Just keep that in mind and enjoy!
+
 Hi hello ! First of all let me introduce all of this: this is a blog, yeah. This is exactly my third one, the other ones are cut off the Internet for the following reason: I was ashamed of them. Didn't talked that much about things that I like but stuff I thought it was good to have in a blog. As a result, it was not good material.
 
 So this one is my third and last take at a blog. If this one fail, I'm not tring again ! So I'm only going to speak about what I want to speak about !
